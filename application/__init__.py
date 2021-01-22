@@ -6,7 +6,7 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.preprocessing import OneHotEncoder
 
 #load data
-df = pd.read_csv("../carData/car.data", header = None, names=['buying', 'maint', 'doors', 'persons', 'lug_boot', 'safety', 'eval'])
+df = pd.read_csv("./carData/car.data", header = None, names=['buying', 'maint', 'doors', 'persons', 'lug_boot', 'safety', 'eval'])
 X = df.iloc[:, :-1].values
 y = df.iloc[:, -1].values
 
